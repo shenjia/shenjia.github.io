@@ -1,0 +1,41 @@
+<html>
+<head>
+<title>Flush DNS</title>
+<style>
+body {
+	padding: 50px;
+    background-color: #272822;
+    color: #939387;
+    font-family: Helvetica, "微软雅黑", Arial, sans-serif;
+}
+h1 {
+    color: #fdc61a;
+}
+span {
+	color: #b1b1a4;
+	font-size: 0.5em;
+	margin-left: 20px;
+}
+em {
+	color: #a6e22e;
+	text-decoration: none;
+}
+a {
+	padding: 20px;
+	display: inline-block;
+	text-align: center;
+	background-color: #3b3a32;
+	color: #a6e22e;
+	text-decoration: none;
+}
+textarea {
+	width: 600px;
+	height: 50px;
+}
+</style>
+</head>
+<h1>Flush Dns<span>&lt;zshenjia@gmail.com&gt;</span></h1>
+<p>1. Start your chrome with <em>--enable-benchmarking</em> command flag.</p>
+<p>2. Drag below button to your bookmarks, that's it!</p>
+<a href="javascript:(function(){chrome.benchmarking.clearHostResolverCache();chrome.benchmarking.closeConnections();location.reload();})();">Flush DNS!</a>
+</html>
