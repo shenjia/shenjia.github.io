@@ -20,7 +20,15 @@ em {
 	color: #a6e22e;
 	text-decoration: none;
 }
-a {
+pre {
+	width: 600px;
+	padding: 20px;
+	border: 1px #49483e solid;
+}
+strong {
+	color: #cfcfc2;
+}
+a.button {
 	padding: 20px;
 	display: inline-block;
 	text-align: center;
@@ -35,7 +43,13 @@ textarea {
 </style>
 </head>
 <h1>Flush Dns<span>&lt;zshenjia@gmail.com&gt;</span></h1>
-<p>1. Start your chrome with <em>--enable-benchmarking</em> command flag.</p>
+<p>1. Start your chrome with <em>--enable-net-benchmarking</em> command flag.</p>
+<pre>
+<strong>Windows:</strong> chrome.exe --enable-net-benchmarking
+<strong>Linux:</strong> google-chrome --enable-net-benchmarking
+<strong>Mac:</strong> open /applications/google\ chrome.app --args --enable-net-benchmarking
+</pre>
 <p>2. Drag below button to your bookmarks, that's it!</p>
-<a href="javascript:(function(){chrome.benchmarking.clearHostResolverCache();chrome.benchmarking.closeConnections();location.reload();})();">Flush DNS!</a>
+<a class="button" href="javascript:(function(){chrome.benchmarking.clearHostResolverCache();chrome.benchmarking.closeConnections();location.reload();})();">Flush DNS!</a>
+<a href="https://github.com/shenjia/FlushDNS"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://s3.amazonaws.com/github/ribbons/forkme_right_orange_ff7600.png" alt="Fork me on GitHub"></a>
 </html>
